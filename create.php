@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $description = htmlspecialchars($_POST['description']);
     $location = htmlspecialchars($_POST['location']);
     $category = htmlspecialchars($_POST['category']);
-    $eventDateRaw = $_POST['event_date'];  // e.g. 2025-07-18T15:30
+    $eventDateRaw = $_POST['event_date']; 
     $eventDate = date('Y-m-d H:i:s', strtotime($eventDateRaw));
 
     $userID = $_SESSION["userID"];
